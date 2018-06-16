@@ -4,7 +4,7 @@ defmodule TeslaRequestId.MixProject do
   def project do
     [
       app: :tesla_request_id,
-      version: "0.1.0",
+      version: "0.2.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env() == :prod,
       test_coverage: [tool: ExCoveralls],
@@ -30,9 +30,6 @@ defmodule TeslaRequestId.MixProject do
   defp description do
     """
     Tesla middleware for adding x-request-id to outgoing requests.
-
-    It takes the :request_id property from the Logger metadata and passes it on
-    under the x-request-id header in outgoing http requests made through tesla.
     """
   end
 
@@ -41,8 +38,7 @@ defmodule TeslaRequestId.MixProject do
       maintainers: ["Chris Dosé <chris.dose@gmail.com>"],
       licenses: ["MIT"],
       links: %{
-        "GitHub" => "https://github.com/doughsay/tesla_request_id",
-        "Docs" => "https://hexdocs.pm/tesla_request_id"
+        "GitHub" => "https://github.com/doughsay/tesla_request_id"
       }
     ]
   end

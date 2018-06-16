@@ -1,6 +1,6 @@
 # Tesla Request Id Middleware
 
-[![Build Status](https://travis-ci.org/doughsay/tesla_request_id.svg?branch=master)](https://travis-ci.org/doughsay/tesla_request_id)
+[![Build Status](https://travis-ci.com/doughsay/tesla_request_id.svg?branch=master)](https://travis-ci.com/doughsay/tesla_request_id)
 [![Code Coverage](https://img.shields.io/codecov/c/github/doughsay/tesla_request_id.svg)](https://codecov.io/gh/doughsay/tesla_request_id)
 [![Hex.pm](https://img.shields.io/hexpm/v/tesla_request_id.svg)](http://hex.pm/packages/tesla_request_id)
 
@@ -15,7 +15,7 @@ Add `tesla_request_id` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:tesla_request_id, "~> 0.1.0"}
+    {:tesla_request_id, "~> 0.2.0"}
   ]
 end
 ```
