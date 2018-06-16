@@ -38,8 +38,7 @@ defmodule TeslaRequestId.MixProject do
       maintainers: ["Chris Dosé <chris.dose@gmail.com>"],
       licenses: ["MIT"],
       links: %{
-        "GitHub" => "https://github.com/doughsay/tesla_request_id",
-        "Docs" => "https://hexdocs.pm/tesla_request_id"
+        "GitHub" => "https://github.com/doughsay/tesla_request_id"
       }
     ]
   end
