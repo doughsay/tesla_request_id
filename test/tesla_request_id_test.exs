@@ -2,7 +2,7 @@ defmodule TeslaRequestIdTest do
   use ExUnit.Case
   alias Tesla.Env
 
-  @middleware TeslaRequestId.Middleware
+  @middleware Tesla.Middleware.RequestId
 
   test "with no request_id, it has no effect on the headers" do
     assert {:ok, env} = @middleware.call(%Env{headers: [{"authorization", "secret"}]}, [], [])
