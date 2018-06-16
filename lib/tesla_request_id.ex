@@ -1,4 +1,4 @@
-defmodule TeslaRequestId.Middleware do
+defmodule Tesla.Middleware.RequestId do
   @moduledoc """
   Takes the `:request_id` property from the Logger metadata and passes it on in a header.
   (defaults to `"x-request-id"`).
@@ -7,7 +7,7 @@ defmodule TeslaRequestId.Middleware do
   ```
   defmodule MyClient do
     use Tesla
-    plug TeslaRequestId.Middleware, header_name: "x-transaction-id"
+    plug Tesla.Middleware.RequestId, header_name: "x-transaction-id"
   end
   ```
   """
