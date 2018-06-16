@@ -30,9 +30,6 @@ defmodule TeslaRequestId.MixProject do
   defp description do
     """
     Tesla middleware for adding x-request-id to outgoing requests.
-
-    It takes the :request_id property from the Logger metadata and passes it on
-    under the x-request-id header in outgoing http requests made through tesla.
     """
   end
 
