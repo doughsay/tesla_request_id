@@ -1,12 +1,16 @@
 language: elixir
 
+otp_release:
+  - 20.3
+  - 21.0
+
 elixir:
-  - 1.5
   - 1.6
+  - 1.7
 
 script:
   - mix compile --warnings-as-errors
-  - if [[ $(mix help format) ]]; then mix format --check-formatted; fi
+  - mix format --check-formatted
   - mix credo
   - mix coveralls.json
 
