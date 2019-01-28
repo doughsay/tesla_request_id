@@ -45,7 +45,7 @@ defmodule TeslaRequestId.MixProject do
 
   defp deps do
     [
-      {:credo, "~> 0.9", only: [:dev, :test], runtime: false},
+      {:credo, "~> 1.0", only: [:dev, :test], runtime: false},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:excoveralls, "~> 0.9", only: :test},
       {:tesla, "~> 1.0"}
